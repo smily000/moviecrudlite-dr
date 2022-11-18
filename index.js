@@ -55,14 +55,6 @@ app.get("/read", function(request, response) {
 
 
 
-movieSchema.findOneAndDelete({name:"Title"}, function (err, docs) {
-	if (err){
-		console.log(err)
-	}
-	else{
-		console.log("Deleted User : ", docs);
-	}
-});
 
 app.listen(port, function() {
 	console.log("Server is running at http://localhost:3000/")
