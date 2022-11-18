@@ -10,7 +10,7 @@ app.get('/test', function(request, response) {
 })
 
 
-// Start MongoDB Atlas ********
+
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -24,7 +24,7 @@ const movieSchema = {
 }
 const Movie = mongoose.model("movie", movieSchema);
 
-// Create route called from create.html
+
 app.post("/create", function(req, res){
 	let newNote = new Movie({
 		title: req.body.title,
@@ -53,10 +53,16 @@ app.get("/read", function(request, response) {
 	})
 })
 
-// Todo: Implement your own MongoDB Atlas Organization, Project, Database Cluster, Database, and Collection.
-// Todo: Implement and test the Update and Delete functionCRUD.
 
-// End MongoDB Atlas ********
+
+movieSchema.findOneAndDelete({}, function (err, docs) {
+	if (err){
+		console.log(err)
+	}
+	else{
+		console.log("Deleted User : ", docs);
+	}
+});
 
 app.listen(port, function() {
 	console.log("Server is running at http://localhost:3000/")
