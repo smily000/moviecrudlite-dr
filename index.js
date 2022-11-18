@@ -55,7 +55,7 @@ app.get("/read", function(request, response) {
 
 
 
-movieSchema.findOneAndDelete({}, function (err, docs) {
+movieSchema.findOneAndDelete({name:"Title"}, function (err, docs) {
 	if (err){
 		console.log(err)
 	}
