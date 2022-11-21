@@ -6,6 +6,7 @@ This repository is a template that can be used to create a Node.js and Express w
 
 Initial Usage:
 - npm install express
-- npm start
+- npm star
 
 
+Eric pogue is where the code came from. 
