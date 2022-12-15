@@ -10,3 +10,8 @@ Initial Usage:
 
 
 Eric pogue is where the code came from. 
+
+
+Here are some of my refrence
+
+https://www.makeuseof.com/how-to-build-todo-list-app-using-javascript/
