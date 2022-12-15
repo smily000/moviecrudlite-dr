@@ -11,8 +11,7 @@ function initMap(){
         var infoWindow = new google.maps.InfoWindow({content:"We are located in Lewis University"});
             marker1.addListener('click', function() {
                 infoWindow.open(gMap, marker1);
-                ++score
-                SetScore(score)
+                alert('Here is the 10% off your next website text:000')
 
                 
         });
@@ -21,9 +20,7 @@ function initMap(){
         var infoWindow = new google.maps.InfoWindow({content:"We are also located in Lewis University"});
             marker2.addListener('click', function() {
                 infoWindow.open(gMap, marker2);
-                ++score
-                SetScore(score)
-
+                alert('text:000 for you 50%')
                 
         });
         
@@ -34,4 +31,8 @@ function initMap(){
 
 function initApplication(){
     console.log('map mania Lite- starting');
+
 }
+
+
+
