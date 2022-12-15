@@ -12,7 +12,7 @@ function checkDead(){
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     if(blockLeft<20 && blockLeft>0 && characterTop>=130){
-        alert(); 
+        alert("you lose sorry but here have 50% off your next website Code:3333"); 
     }
 }
 
