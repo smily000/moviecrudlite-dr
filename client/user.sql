@@ -1,0 +1,24 @@
+
+GRANT SELECT, INSERT,UPDATE, DELETE ON User.* TO php_user@localhost IDENTIFIED BY 'secure_password';
+
+
+
+DROP DATABASE IF EXISTS User;
+
+CREATE DATABASE User;
+
+USE User;
+
+DROP TABLE IF EXISTS User;
+
+CREATE TABLE User(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    create_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
