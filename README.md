@@ -12,6 +12,9 @@ Initial Usage:
 Eric pogue is where the code came from. 
 
 
-Here are some of my refrence
-
+Here are some of my references on the code that i have used.
 https://www.makeuseof.com/how-to-build-todo-list-app-using-javascript/
+https://blog.logrocket.com/build-a-game-with-html-css-javascript/
+
+Daniel Reyes, final project, dannyboym dreyes50@lewisu.edu
+
